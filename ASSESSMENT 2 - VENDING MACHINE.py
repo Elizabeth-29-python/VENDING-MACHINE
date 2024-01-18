@@ -9,7 +9,7 @@ class VendingMachine:
 
     def insert_money(self, amount): # This allows the user to insert money into the vending machine. It updates the balance by adding the inserted amount and returns a message confirming the amount inserted.
         self.balance += amount
-        return "You have inserted " + str(amount) + " dollars."
+        return "You have inserted " + str(amount) + " dirham."
 
     def select_product(self, product): 
         # This is used to select a product for purchase. It checks if the selected product is available in the vending machine's product list. If the balance is sufficient to purchase the selected product, it deducts the price from the balance and returns a message confirming the successful purchase along with the remaining balance. If the balance is insufficient or the product is not available, appropriate error messages are returned.
